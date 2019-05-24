@@ -54,7 +54,7 @@ public class Linked_List<T> {
         Node tmp = head;
         while (tmp != null){
             if (cont==index){
-                tmp.value=value;
+                tmp.value= (Comparable) value;
             }
             tmp = tmp.getNext();
             cont++;
