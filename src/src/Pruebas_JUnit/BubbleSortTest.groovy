@@ -1,7 +1,7 @@
 package Pruebas_JUnit
 
 import Algoritmos_de_ordenamiento.BubbleSort
-import List.LinkedList
+import Lista_enlazada.LinkedList
 import org.junit.jupiter.api.Test
 
 class BubbleSortTest extends BubbleSort {
