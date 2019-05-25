@@ -28,13 +28,18 @@ public class Node<T extends Comparable<T>> {
         this.next = next;
     }
 
+    public Node<T> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(Node<T> prev) {
+        this.prev = prev;
+    }
+
     //public Node_of_pieces<T> getPrev() {
     //   return this.prev;
     //}
-//
-//    public void setPrev(Node_of_pieces<T> prev) {
-//        this.prev = prev;
-//    }
+
 
     public String valueStr(){
         String value = "";

@@ -5,44 +5,8 @@ import Lista_enlazada.Linked_List;
 import java.util.List;
 
 public class MergeSorte<T extends Comparable<T>> {
-    T element;
-    public static void main(String[] args) {
 
-        MergeSorte<Integer> ml = new MergeSorte<>();
-        Linked_List<Integer> l1 = new Linked_List<>();
-        l1.addLast(8);
-        l1.addLast(6);
-        l1.addLast(7);
-        l1.addLast(5);
-        l1.addLast(3);
-        l1.addLast(0);
-        l1.addLast(9);
-        System.out.println(l1.printL());
-        System.out.println("calling mergesort");
-        Linked_List<Integer> result = ml.mergesort(l1);
-        System.out.println(result.printL());
-
-        MergeSorte<String> ml2 = new MergeSorte<>();
-        Linked_List<String> l2 = new Linked_List<>();
-        l2.addLast("eight");
-        l2.addLast("six");
-        l2.addLast("seven");
-        l2.addLast("five");
-        l2.addLast("three");
-        l2.addLast("oh");
-        l2.addLast("nein");
-        System.out.println(l2.printL());
-        System.out.println("calling mergesort");
-        Linked_List<String> result2 = ml2.mergesort(l2);
-        System.out.println(result2.printL());
-
-        String hola = "hola";
-        System.out.println(hola.getClass().toString());
-
-    }
-
-    //call mergesort on param list
-    public Linked_List<T> mergesort(Linked_List<T> lista) {
+    public static Linked_List<T> mergesort(Linked_List<T> lista) {
         if(lista.length <= 1) {
             return lista;
         } else {

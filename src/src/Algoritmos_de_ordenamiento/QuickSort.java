@@ -1,14 +1,14 @@
 package Algoritmos_de_ordenamiento;
 
-import Lista_enlazada.LinkedList;
+import Lista_enlazada.Linked_List;
 import Lista_enlazada.Node;
 
 public class QuickSort {
 
     // The main function to sort a linked list. It mainly calls _quickSort()
-    public static void quickSort(LinkedList list)
+    public static void quickSort(Linked_List list)
     {
-        _quickSort(list.getHead(),list.getTail());
+        _quickSort(list.getHead(), (Node) list.get(list.length - 1));
     }
 
     private static Node partition(Node left, Node right)

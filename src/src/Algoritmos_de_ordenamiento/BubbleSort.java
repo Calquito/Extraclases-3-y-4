@@ -1,12 +1,14 @@
 package Algoritmos_de_ordenamiento;
 
-import Lista_enlazada.LinkedList;
+import Lista_enlazada.Linked_List;
 import Lista_enlazada.Node;
+
+import java.util.LinkedList;
 
 public class BubbleSort{
 
-    public static void sort(LinkedList list) {
-        if (list.length> 1) {
+    public static void sort(Linked_List list) {
+        if (list.length ==1) {
             for (int i = 0; i < list.length; i++ ) {
                 Node currentNode = list.getHead();
                 Node next = list.getHead().getNext();
