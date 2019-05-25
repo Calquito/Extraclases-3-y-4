@@ -1,7 +1,7 @@
 package Algoritmos_de_ordenamiento;
 
-import List.LinkedList;
-import List.Node;
+import Lista_enlazada.LinkedList;
+import Lista_enlazada.Node;
 
 public class BubbleSort{
 
