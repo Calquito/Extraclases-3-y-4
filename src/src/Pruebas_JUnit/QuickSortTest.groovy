@@ -1,7 +1,7 @@
 package Pruebas_JUnit
 
 import Algoritmos_de_ordenamiento.QuickSort
-import List.LinkedList
+import Lista_enlazada.LinkedList
 import org.junit.jupiter.api.Test
 
 class QuickSortTest extends QuickSort {
